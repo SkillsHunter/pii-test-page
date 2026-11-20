@@ -1,4 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PII Layer Test Bench</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,6 +41,10 @@
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.55; }
 .wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 20px; }
 header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px; }
@@ -86,6 +94,8 @@ footer { color: var(--muted); font-size: .82rem; display: grid; gap: 4px; }
 code { font-family: var(--font-mono); font-size: .88em; }
 @media (prefers-reduced-motion: no-preference) { .btn, .chip { transition: border-color .15s, color .15s; } }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header>
@@ -98,7 +108,7 @@ code { font-family: var(--font-mono); font-size: .88em; }
 
   <div class="notice">
     <span><strong>Use invented details only.</strong> Don't type a real student's name, NetID or email.</span>
-    <span>Everything runs inside this browser tab. Nothing is saved or sent anywhere, and no real AI is called; the "AI" here is a stand-in that only records what it would have received.</span>
+    <span>Everything runs inside this browser tab. Nothing you type is saved or sent anywhere, and no real AI is called; the "AI" here is a stand-in that only records what it would have received.</span>
   </div>
 
   <div class="grid">
@@ -317,3 +327,5 @@ def run_all(identity_json, text):
   boot();
 })();
 </script>
+</body>
+</html>
