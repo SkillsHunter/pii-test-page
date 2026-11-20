@@ -5,4 +5,4 @@ A browser page for trying the Socratic defense project's Phase 1 privacy layer. 
 - Everything runs in the browser through Pyodide (Python compiled to WebAssembly). Nothing is saved or sent anywhere, and no real AI is called.
 - Use invented details only.
 - This repo holds only the built page. The project's source is in a separate private repository; this page is rebuilt from it with `scripts/build_demo.py` (decision record ADR-0021).
-- Third-party files: Pyodide 0.27.2 (MPL-2.0) in `pyodide/`, and confusable-homoglyphs 3.3.1 (MIT) inside `bundle.json`.
+- Third-party files are listed in `THIRD_PARTY.md`.
